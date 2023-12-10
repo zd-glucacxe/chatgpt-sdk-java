@@ -34,7 +34,7 @@ public class ChatCompletionRequest {
      * 请求ID
      */
     @JsonProperty("request_id")
-    private String requestId = String.format("xfg-%d", System.currentTimeMillis());
+    private String requestId = String.format("pyy-%d", System.currentTimeMillis());
     /**
      * 控制温度【随机性】
      */
@@ -55,7 +55,7 @@ public class ChatCompletionRequest {
      */
     private boolean incremental = true;
     /**
-     * sseformat, 用于兼容解决sse增量模式okhttpsse截取data:后面空格问题, [data: hello]。只在增量模式下使用sseFormat。
+     * sseformat, 用于兼容解决sse增量模式 okhttpsse 截取data:后面空格问题, [data: hello]。只在增量模式下使用sseFormat。
      */
     private String sseFormat = "data";
 

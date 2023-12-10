@@ -36,6 +36,7 @@ public class ApiTest {
         Configuration configuration = new Configuration();
         configuration.setApiHost("https://open.bigmodel.cn/");
         configuration.setApiSecretKey("4cc938c69a448e31babe006889ae434f.vP9n6LTcTOlJtnVf");
+        // 设置 okhttp的日志级别
         configuration.setLevel(HttpLoggingInterceptor.Level.BODY);
         // 2. 会话工厂
         DefaultOpenAiSessionFactory factory = new DefaultOpenAiSessionFactory(configuration);
@@ -55,6 +56,9 @@ public class ApiTest {
         request.setModel(Model.CHATGLM_TURBO);
         request.setIncremental(false);
         request.setPrompt(new ArrayList<ChatCompletionRequest.Prompt>() {
+            // 用于在序列化和反序列化时标识类的版本
+            // 如果您不指定 serialVersionUID，则Java将根据类名、实现接口和其他属性自动生成一个。
+            // 但是，这样做可能会导致在类的结构发生变化时出现问题
             private static final long serialVersionUID = -7988151926241837899L;
 
             {

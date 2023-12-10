@@ -32,6 +32,7 @@ public class Configuration {
 
     public void setApiSecretKey(String apiSecretKey) {
         this.apiSecretKey = apiSecretKey;
+        // 拿出需要的apiKey、apiSecret
         String[] arrStr = apiSecretKey.split("\\.");
         if (arrStr.length != 2) {
             throw new RuntimeException("invalid apiSecretKey");
@@ -77,7 +78,7 @@ public class Configuration {
     @Getter
     private long readTimeout = 450;
 
-    // http keywords
+    // 默认请求头参数配置
     public static final String SSE_CONTENT_TYPE = "text/event-stream";
     public static final String DEFAULT_USER_AGENT = "Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)";
     public static final String APPLICATION_JSON = "application/json";
