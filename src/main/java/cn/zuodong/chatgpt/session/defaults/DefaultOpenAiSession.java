@@ -1,14 +1,14 @@
-package love.cxy020700.chatglm.session.defaults;
+package cn.zuodong.chatgpt.session.defaults;
 
+import cn.zuodong.chatgpt.IOpenAiApi;
+import cn.zuodong.chatgpt.model.ChatCompletionRequest;
+import cn.zuodong.chatgpt.model.ChatCompletionResponse;
+import cn.zuodong.chatgpt.model.EventType;
+import cn.zuodong.chatgpt.session.Configuration;
+import cn.zuodong.chatgpt.session.OpenAiSession;
 import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.extern.slf4j.Slf4j;
-import love.cxy020700.chatglm.IOpenAiApi;
-import love.cxy020700.chatglm.model.ChatCompletionRequest;
-import love.cxy020700.chatglm.model.ChatCompletionResponse;
-import love.cxy020700.chatglm.model.EventType;
-import love.cxy020700.chatglm.session.Configuration;
-import love.cxy020700.chatglm.session.OpenAiSession;
 import okhttp3.MediaType;
 import okhttp3.Request;
 import okhttp3.RequestBody;
@@ -21,7 +21,7 @@ import java.util.concurrent.CompletableFuture;
 
 /**
  * @description: 会话服务
- * @author: pengyanyu
+ * @author zuodong
  * @createDate: 2023/12/9
  * @version: 1.0
  */

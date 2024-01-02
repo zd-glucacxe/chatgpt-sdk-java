@@ -1,11 +1,11 @@
-package love.cxy020700.chatglm.session;
+package cn.zuodong.chatgpt.session;
 
+import cn.zuodong.chatgpt.IOpenAiApi;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
-import love.cxy020700.chatglm.IOpenAiApi;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import okhttp3.sse.EventSource;
@@ -13,7 +13,7 @@ import okhttp3.sse.EventSources;
 
 /**
  * @description: 配置文件
- * @author: pengyanyu
+ * @author zuodong
  * @createDate: 2023/12/9
  * @version: 1.0
  */

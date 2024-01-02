@@ -1,10 +1,10 @@
-package love.cxy020700.chatglm.model;
+package cn.zuodong.chatgpt.model;
 
 import lombok.Data;
 
 /**
  * @description: 返回结果
- * @author: pengyanyu
+ * @author zuodong
  * @createDate: 2023/12/9
  * @version: 1.0
  */

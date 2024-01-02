@@ -1,12 +1,13 @@
-package love.cxy020700.chatglm;
+package cn.zuodong.chatgpt;
 
+import cn.zuodong.chatgpt.model.*;
 import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.extern.slf4j.Slf4j;
-import love.cxy020700.chatglm.model.*;
-import love.cxy020700.chatglm.session.Configuration;
-import love.cxy020700.chatglm.session.OpenAiSession;
-import love.cxy020700.chatglm.session.defaults.DefaultOpenAiSessionFactory;
+
+import cn.zuodong.chatgpt.session.Configuration;
+import cn.zuodong.chatgpt.session.OpenAiSession;
+import cn.zuodong.chatgpt.session.defaults.DefaultOpenAiSessionFactory;
 import okhttp3.logging.HttpLoggingInterceptor;
 import okhttp3.sse.EventSource;
 import okhttp3.sse.EventSourceListener;
@@ -21,9 +22,9 @@ import java.util.concurrent.ExecutionException;
 
 /**
  * @description: 在官网申请 ApiSecretKey <a href="https://open.bigmodel.cn/usercenter/apikeys">ApiSecretKey</a>
- * @author: pengyanyu
+ * @author zuodong
  * @createDate: 2023/12/9
- * @version: 1.0
+ * @version: 1.0 
  */
 @Slf4j
 public class ApiTest {
@@ -35,7 +36,9 @@ public class ApiTest {
         // 1. 配置文件
         Configuration configuration = new Configuration();
         configuration.setApiHost("https://open.bigmodel.cn/");
-        configuration.setApiSecretKey("4cc938c69a448e31babe006889ae434f.vP9n6LTcTOlJtnVf");
+//        configuration.setApiSecretKey("4cc938c69a448e31babe006889ae434f.vP9n6LTcTOlJtnVf");
+        configuration.setApiSecretKey("4a2de6f0a9329616be058a724985a17d.2s7jjXrnSpDzox3t");
+
         // 设置 okhttp的日志级别
         configuration.setLevel(HttpLoggingInterceptor.Level.BODY);
         // 2. 会话工厂

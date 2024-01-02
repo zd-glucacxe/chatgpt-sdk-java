@@ -1,4 +1,4 @@
-package love.cxy020700.chatglm.utils;
+package cn.zuodong.chatgpt.utils;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @description: 签名工具包；过期时间30分钟，缓存时间29分钟
- * @author: pengyanyu
+ * @author zuodong
  * @createDate: 2023/12/9
  * @version: 1.0
  */

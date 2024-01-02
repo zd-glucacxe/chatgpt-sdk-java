@@ -1,8 +1,8 @@
-package love.cxy020700.chatglm.session;
+package cn.zuodong.chatgpt.session;
 
 /**
  * @description: 工厂接口
- * @author: pengyanyu
+ * @author zuodong
  * @createDate: 2023/12/9
  * @version: 1.0
  */

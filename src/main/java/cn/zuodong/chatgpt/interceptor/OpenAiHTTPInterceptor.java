@@ -1,7 +1,7 @@
-package love.cxy020700.chatglm.interceptor;
+package cn.zuodong.chatgpt.interceptor;
 
-import love.cxy020700.chatglm.session.Configuration;
-import love.cxy020700.chatglm.utils.BearerTokenUtils;
+import cn.zuodong.chatgpt.session.Configuration;
+import cn.zuodong.chatgpt.utils.BearerTokenUtils;
 import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -11,12 +11,15 @@ import java.io.IOException;
 
 /**
  * @description: 接口拦截器
- * @author: pengyanyu
+ * @author zuodong
  * @createDate: 2023/12/9
  * @version: 1.0
  */
 public class OpenAiHTTPInterceptor implements Interceptor {
 
+    /**
+     * 智普Ai，Jwt加密Token
+     */
     private final Configuration configuration;
 
     public OpenAiHTTPInterceptor(Configuration configuration) {
@@ -24,9 +27,10 @@ public class OpenAiHTTPInterceptor implements Interceptor {
     }
 
     @Override
-    public Response intercept(@NotNull Interceptor.Chain chain) throws IOException {
-        // 1. 获取原始请求
+    public @NotNull Response intercept(Chain chain) throws IOException {
+        // 1. 获取原始 Request
         Request original = chain.request();
+
 
         // 2. 构建新的请求
         Request request = original.newBuilder()

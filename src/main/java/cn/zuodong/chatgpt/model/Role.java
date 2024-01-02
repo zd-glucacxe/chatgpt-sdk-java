@@ -1,11 +1,11 @@
-package love.cxy020700.chatglm.model;
+package cn.zuodong.chatgpt.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
  * @description: 角色
- * @author: pengyanyu
+ * @author zuodong
  * @createDate: 2023/12/9
  * @version: 1.0
  */

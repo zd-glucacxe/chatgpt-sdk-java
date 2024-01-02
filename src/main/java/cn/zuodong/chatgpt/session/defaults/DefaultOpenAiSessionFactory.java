@@ -1,10 +1,10 @@
-package love.cxy020700.chatglm.session.defaults;
+package cn.zuodong.chatgpt.session.defaults;
 
-import love.cxy020700.chatglm.IOpenAiApi;
-import love.cxy020700.chatglm.interceptor.OpenAiHTTPInterceptor;
-import love.cxy020700.chatglm.session.Configuration;
-import love.cxy020700.chatglm.session.OpenAiSession;
-import love.cxy020700.chatglm.session.OpenAiSessionFactory;
+import cn.zuodong.chatgpt.IOpenAiApi;
+import cn.zuodong.chatgpt.interceptor.OpenAiHTTPInterceptor;
+import cn.zuodong.chatgpt.session.Configuration;
+import cn.zuodong.chatgpt.session.OpenAiSession;
+import cn.zuodong.chatgpt.session.OpenAiSessionFactory;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @description: 会话工厂
- * @author: pengyanyu
+ * @author zuodong
  * @createDate: 2023/12/9
  * @version: 1.0
  */

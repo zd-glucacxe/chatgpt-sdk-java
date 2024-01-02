@@ -1,11 +1,11 @@
-package love.cxy020700.chatglm.model;
+package cn.zuodong.chatgpt.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
  * @description: 消息类型 <a href="https://open.bigmodel.cn/dev/api#chatglm_lite">chatglm_lite</a>
- * @author: pengyanyu
+ * @author zuodong
  * @createDate: 2023/12/9
  * @version: 1.0
  */

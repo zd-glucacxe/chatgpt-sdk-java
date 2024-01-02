@@ -1,7 +1,7 @@
-package love.cxy020700.chatglm.session;
+package cn.zuodong.chatgpt.session;
 
+import cn.zuodong.chatgpt.model.ChatCompletionRequest;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import love.cxy020700.chatglm.model.ChatCompletionRequest;
 import okhttp3.sse.EventSource;
 import okhttp3.sse.EventSourceListener;
 
@@ -9,7 +9,7 @@ import java.util.concurrent.CompletableFuture;
 
 /**
  * @description: 会话服务接口
- * @author: pengyanyu
+ * @author zuodong
  * @createDate: 2023/12/9
  * @version: 1.0
  */

@@ -1,4 +1,4 @@
-package love.cxy020700.chatglm.model;
+package cn.zuodong.chatgpt.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -13,7 +13,7 @@ import java.util.Map;
 
 /**
  * @description: 请求参数
- * @author: pengyanyu
+ * @author zuodong
  * @createDate: 2023/12/9
  * @version: 1.0
  */
