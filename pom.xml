@@ -206,31 +206,31 @@
                                 <configuration>
                                     <additionalparam>-Xdoclint:none</additionalparam>
                                     <!-- /usr/libexec/java_home -V -->
-                                    <javadocExecutable>/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/bin/javadoc</javadocExecutable>
+                                    <javadocExecutable>C:\Users\0000\.jdks\corretto-1.8.0_372\bin\javadoc</javadocExecutable>
                                 </configuration>
                             </execution>
                         </executions>
                     </plugin>
 
                     <!--gpg插件-->
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.5</version>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                                <configuration>
-                                    <keyname>fuzhengwei</keyname>
-                                    <passphrase>123456</passphrase>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
+<!--                    <plugin>-->
+<!--                        <groupId>org.apache.maven.plugins</groupId>-->
+<!--                        <artifactId>maven-gpg-plugin</artifactId>-->
+<!--                        <version>1.5</version>-->
+<!--                        <executions>-->
+<!--                            <execution>-->
+<!--                                <id>sign-artifacts</id>-->
+<!--                                <phase>verify</phase>-->
+<!--                                <goals>-->
+<!--                                    <goal>sign</goal>-->
+<!--                                </goals>-->
+<!--                                <configuration>-->
+<!--                                    <keyname>fuzhengwei</keyname>-->
+<!--                                    <passphrase>123456</passphrase>-->
+<!--                                </configuration>-->
+<!--                            </execution>-->
+<!--                        </executions>-->
+<!--                    </plugin>-->
 
                 </plugins>
             </build>

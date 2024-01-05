@@ -18,7 +18,6 @@ import okhttp3.sse.EventSources;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Configuration {
-
     // 智普Ai ChatGlM 请求地址
     @Getter
     @Setter
